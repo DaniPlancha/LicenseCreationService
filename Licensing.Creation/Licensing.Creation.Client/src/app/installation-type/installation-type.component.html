@@ -1,0 +1,36 @@
+<div class="section-wrap">
+    <button class="open-add-menu-button" (click)="isInstallaionTypesOpen = !isInstallaionTypesOpen">INSTALLATION TYPES</button>
+    <div class="form-and-info-wrapper" [style.display]="isInstallaionTypesOpen ? 'flex' : 'none'">
+
+        <div class="form-and-info-wrapper-inline">
+
+            <form #installationTypeForm="ngForm" class="installation-types-form" id="form" (ngSubmit)="AddInstallationType(installationTypeForm.value)">
+                <input type="text" name="name" [(ngModel)]="name" placeholder="Name" required>
+                <input class="submit-button" type="submit" value="+">
+            </form>
+
+            <div class="all-installation-types-wrapper">
+                <div class="installation-type-info" *ngFor="let installationType of installationTypes">
+                    <div> {{installationType.name}} </div>
+                    <span>
+                        <button class="display-selected-products-button" (click)="DisplaySelectedLicenseProducts(installationType)">
+                            <span class="material-icons-outlined">menu</span>
+                        </button>
+                        <button class="delete-button" (click)="DeleteInstallationType(installationType.id)">
+                            <span class="material-icons-outlined">delete</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="select-component">
+            <div>Product details for:</div>
+            <div *ngIf="selectedInstallationType != null">{{ selectedInstallationType.name }}</div>
+            <div *ngIf="selectedInstallationType == null">none</div>
+            <licensing-selection (productSelectionChangedEvent)="UpdateProductSelection($event)"></licensing-selection>
+        </div>
+
+    </div>
+</div>

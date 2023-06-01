@@ -1,0 +1,150 @@
+.section-wrap{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 25px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.open-add-menu-button{
+    font-size: 24px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #2642E0;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    margin:0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.open-add-menu-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.form-and-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 0;
+    border-radius: 3px;
+    margin: 15px
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: 50px;
+    border-bottom: solid black 1px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 46%;
+}
+
+.inputs > input {
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    border: 0;
+    color: white;
+    border-bottom: 1.5px white solid;
+    margin-top: 3px;
+    background-color: rgba(128, 128, 128, 0);
+    outline: none;
+    transition: 0.2s;
+}
+
+.inputs > input:nth-child(1) {
+    width: 90px;
+}
+
+.inputs > input:hover {
+    border-color: orange;
+}
+
+.inputs > input:focus {
+    border-color: orange;
+}
+
+.inputs > input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+input.submit-button {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    background-color: orange;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+input.submit-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contracts-wrapper {
+    width: inherit;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 5px;
+}
+
+.contract-type-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contract-type-info > div {
+    font-size: 20px;
+    width: 350px;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    background-color: #E30B2C;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.delete-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+<div class="right-navBar" id="RightNavBar" [style.width]="isOpenedAdministration?'45%':'0'"
+    [style.transform]="isOpenedAdministration?'translatex(-100%)':'translatex(40%)'">
+
+    <button class="xButton" (click)="Close()">✖</button>
+
+    <div class="administration-menu-wrap">
+
+        <contract-type></contract-type>
+        <license-product></license-product>
+        <installation-type></installation-type>
+    </div>
+</div>

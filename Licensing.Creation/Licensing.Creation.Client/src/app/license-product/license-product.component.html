@@ -1,0 +1,25 @@
+<div class="section-wrap">
+    <button class="open-add-menu-button" (click)="isLicenseProductsOpen = !isLicenseProductsOpen">LICENSE PRODUCTS</button>
+    <div class="form-and-info-wrapper" [style.display]="isLicenseProductsOpen ? 'flex' : 'none'">
+        
+        <form #licenseProductForm="ngForm" class="form" id="form" (ngSubmit)="AddData(licenseProductForm.value)">
+            <div class="inputs">
+                <input title="ID" type="text" name="id" [(ngModel)]="id" placeholder="ID" required>
+                <input title="Name" type="text" name="name" [(ngModel)]="name" placeholder="Name" required>
+                <input title="Issued Type" type="text" name="issuedType" [(ngModel)]="issuedType" placeholder="Issued Type" required>
+            </div>
+            <input class="submit-button" type="submit" value="+">
+        </form>
+        <div class="all-license-products-wrapper">
+            <div class="license-product-info" *ngFor="let licenseProduct of licenseProducts">
+                <div style="width: 40px;">{{ licenseProduct.id }}</div>
+                <div>{{ licenseProduct.name }}</div>
+                <div>{{ licenseProduct.issuedType }}</div>
+                <button class="delete-button" (click)="DeleteContractType(licenseProduct.id)">
+                    <span class="material-icons-outlined">delete</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

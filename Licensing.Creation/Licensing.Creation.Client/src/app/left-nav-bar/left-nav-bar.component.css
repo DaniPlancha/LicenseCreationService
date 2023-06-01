@@ -1,0 +1,36 @@
+.left-navbar {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #AFB1BA;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.x-Button {
+    top: 2%;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    background-color: orange;
+    transition: 0.2s;
+    font-size: 22px;
+    padding-bottom: 4px;
+    border:0;
+    background-color: #E30B2C;
+    border-radius: 3px;
+    color:white;
+}
+
+
+.x-Button:hover {
+    background-color: white;
+    color: black;
+}

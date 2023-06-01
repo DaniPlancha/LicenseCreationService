@@ -1,0 +1,39 @@
+.right-navBar {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    background-color: #AFB1BA;
+    top: 0;
+    left:100%;
+    transition: 0.5s;
+    overflow-x: hidden;
+    white-space:nowrap;
+}
+
+.xButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2%;
+    left: 3%;
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    background-color: #E30B2C;
+    border-radius: 3px;
+    color: white;
+    transition: 0.2s;
+    font-size: 22px;
+    padding-bottom: 4px;
+    border: 0;
+}
+.xButton:hover {
+    background-color: white;
+    color: black;
+}
+.administration-menu-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}

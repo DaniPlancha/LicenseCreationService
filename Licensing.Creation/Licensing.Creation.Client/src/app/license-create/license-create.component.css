@@ -1,0 +1,112 @@
+.left-navbar-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.select-installation-type-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+}
+
+.submit-form-button {
+    color: white;
+    background-color: orange;
+    border: 0;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 30px;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.submit-form-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.big-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+}
+
+.select-menu {
+    width: 200px;
+}
+
+.single-component-wrap {
+    text-align: left;
+    padding: 30px;
+}
+
+.installation-contracts-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    background-color: #2642E0;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    padding: 10px;
+}
+
+.select-html-wrapper {
+    margin-bottom: 1rem;
+}
+
+.scroll {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.additional-data-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.additional-data-single-item-wrapper {
+    margin-bottom: 10px;
+    writing-mode: vertical-rl;
+    height: 40px;
+}
+
+.additional-data-single-item-wrapper>input {
+    font-size: 16px;
+    width: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: 0px;
+    background-color: transparent;
+    border:none;
+    border-bottom:1px solid orange;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition:   0.1s;
+}
+.additional-data-single-item-wrapper>input::placeholder {
+    color: white;
+}
+.additional-data-single-item-wrapper>input:hover{
+    border-bottom:3px solid darkorange;
+}
+.additional-data-single-item-wrapper>input:focus{
+    border-bottom:3px solid darkorange;
+}

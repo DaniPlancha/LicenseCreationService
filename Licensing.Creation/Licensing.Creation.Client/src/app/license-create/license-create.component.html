@@ -1,0 +1,66 @@
+<form class="left-navbar-form" #createdLicense="ngForm" (ngSubmit)="SubmitData()">
+
+    <div class="big-wrap">
+        <div class="installation-contracts-wrap">
+            <div class="single-component-wrap">
+                <div class="select-installation-type-wrapper">
+                    <div class="select-html-wrapper">
+                        <select #selectInstallationType class="select-menu"
+                            (change)="DisplaySelectedLicenseProducts(selectInstallationType.value)">
+                            <option default selected disabled>Installation type</option>
+                            <option *ngFor="let installationType of installationTypes" [value]="installationType.id">
+                                {{ installationType.name }}
+                            </option>
+                        </select>
+
+                    </div>
+                    <div class="scroll">
+                        <licensing-selection
+                            (productSelectionChangedEvent)="changeSelectedInstallationTypeProducts($event)">
+                        </licensing-selection>
+                    </div>
+                </div>
+            </div>
+            <div class="single-component-wrap">
+                <div class="contract-types-wrapper">
+                    <div class="select-html-wrapper">
+                        <select #selectContractType class="select-menu"
+                            (change)="saveSelectedContractType(selectContractType.value)">
+                            <option disabled selected value>Contract Type</option>
+                            <option *ngFor="let contractType of contractTypes" [value]="contractType.id">
+                                {{ contractType.name }}
+                            </option>
+                        </select>
+                        <span class="custom-arrow"></span>
+                    </div>
+                    <div class="additional-data-wrapper">
+                        <div class="additional-data-single-item-wrapper">
+                            <input type="text" name="id" [(ngModel)]="email" placeholder="Email" required>
+                        </div>
+                        <div class="additional-data-single-item-wrapper">
+                            <input type="text" name="id" [(ngModel)]="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="additional-data-single-item-wrapper">
+                            <input type="text" name="id" [(ngModel)]="company" placeholder="Company" required>
+                        </div>
+                        <div class="additional-data-single-item-wrapper">
+                            <input type="text" name="id" [(ngModel)]="version" placeholder="Version" required>
+                        </div>
+                        <div class="additional-data-single-item-wrapper">
+                            <input type="text" name="id" [(ngModel)]="organizationKey" placeholder="OrganizationKey"
+                                required>
+                        </div>
+                        <div class="submit">
+                            <input value="Create License" class="submit-form-button" type="submit"
+                                placeholder="Submit" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</form>

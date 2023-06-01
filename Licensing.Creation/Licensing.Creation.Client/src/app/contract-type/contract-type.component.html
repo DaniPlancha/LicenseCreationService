@@ -1,0 +1,23 @@
+<div class="section-wrap">
+    <button class="open-add-menu-button" (click)="isOpen = !isOpen">CONTRACT TYPES</button>
+    <div class="form-and-info-wrapper" [style.display]="isOpen ? 'flex' : 'none'">
+
+        <form #contractTypeForm="ngForm" class="form" (ngSubmit)="SubmitContractType(contractTypeForm.value)">
+            <div class="inputs">
+                <input title="ID" type="text" name="id" placeholder="ID" required [(ngModel)]="inputID">
+                <input title="Name" type="text" name="name" placeholder="Name" required [(ngModel)]="inputName">
+            </div>
+            <input class="submit-button" type="submit" value="+">
+        </form>
+        <div class="contracts-wrapper">
+            <div class="contract-type-info" *ngFor="let contractType of contractTypes">
+                <div style="width: 40px;">{{ contractType.id }}</div>
+                <div>{{ contractType.name }}</div>
+                <button class="delete-button" (click)="DeleteContractType(contractType.id)">
+                    <span class="material-icons-outlined">delete</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

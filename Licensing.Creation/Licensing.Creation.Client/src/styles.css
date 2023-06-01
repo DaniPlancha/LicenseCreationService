@@ -1,0 +1,11 @@
+body::-webkit-scrollbar{
+    display: none;
+    
+   }
+body{
+    background-image: url('https://f.hubspotusercontent30.net/hubfs/388534/__%20Corporate%20Website/Page%20Specific/Invoice%20Processing/Final_DocuWare_InvoiceProcessing_JP.mp4/medium.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    --size:15px;
+}

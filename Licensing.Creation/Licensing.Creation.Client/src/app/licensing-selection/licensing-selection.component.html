@@ -1,0 +1,12 @@
+<div class="display-license-products" *ngFor="let licenseProduct of displayedLicenseProducts">
+    <div>
+        <button class="toggle-product-button" (click)="toggleProductSelection(licenseProduct)"
+            [style.background-color]="licenseProduct.selected ? '#2642E0' : '#C2C3C9'" [style.color]="isLocked(licenseProduct) ? 'grey' : licenseProduct.selected ? 'white' : 'black' " [disabled]="isLocked(licenseProduct)" >
+            {{licenseProduct.product.name}}</button>
+        <span>
+            <input class="product-count-input" [(ngModel)]="licenseProduct.count" type="number" onKeyDown="return false"
+                [min]="startingCount(licenseProduct)" [value]="licenseProduct.count"
+                [disabled]="licenseProduct.product.issuedType == 'Module' ? true : false">
+        </span>
+    </div>
+</div>

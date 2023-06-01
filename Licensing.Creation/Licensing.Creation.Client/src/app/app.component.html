@@ -1,0 +1,17 @@
+<left-nav-bar [(isOpened)]="isNavbarCreateOpened"></left-nav-bar>
+<right-nav-bar [(isOpenedAdministration)]="isNavBarAdministrationOpened"></right-nav-bar>
+<div class="column">
+
+  <div class="title">
+    <img src="assets/docuwarelogo.png" alt="" width="600px">
+  </div>
+  <div class="row">
+    <div class="create-button">
+      <button (click)="OpenNavBarCreate()">Creation</button>
+    </div>
+
+    <div class="administration-button">
+      <button (click)="OpenNavBarAdministration()">Administration</button>
+    </div>
+  </div>
+</div>

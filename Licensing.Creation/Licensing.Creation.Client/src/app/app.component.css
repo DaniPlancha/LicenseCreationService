@@ -1,0 +1,62 @@
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    width:60%;
+    align-self: center;
+    justify-content: space-between;
+}
+.title{
+    text-align: center;
+}
+.create-button > button{
+    cursor: pointer;
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+    padding:0px;
+    border-radius: 8px;
+}
+
+.administration-button> button{
+    cursor: pointer;
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    transition: all .35s;
+    padding:0px;
+    border-radius: 8px;
+}
+.administration-button>button:hover{
+    border: 3px solid black;
+    background-color: white;
+    color:black;
+}
+.create-button>button:hover{
+    border: 3px solid black;
+    background-color: white;
+    color:black;
+}

@@ -1,0 +1,38 @@
+.display-license-products{
+    display:flex;
+    flex-direction: column;
+}
+
+.toggle-product-button{
+    width: 120px;
+    padding:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+}
+
+
+.product-count-input {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius:3px;
+}
+
+.product-count-input::-webkit-inner-spin-button {
+    width: 30px;
+    height: 40px;
+}
+
+.product-count-input::-webkit-inner-spin-button:hover {
+    cursor: pointer;
+    
+}
